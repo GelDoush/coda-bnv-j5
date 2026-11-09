@@ -1,9 +1,9 @@
 NAME = exercice_makefile
 
+CFLAGS = -Wall -Wextra -O2
+
 SRCS = main.c \
        functions.c
-
-CFLAGS = -Wall -Wextra -O2
 
 all: $(NAME)
 
@@ -12,4 +12,5 @@ $(NAME): $(SRCS)
 
 fclean: 
 	rm -f $(NAME)
+
 re: fclean all
